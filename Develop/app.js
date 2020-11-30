@@ -20,22 +20,22 @@ const managerInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What is the manager's name?"
+            message: "What's the manager's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What is the manager's ID?"
+            message: "What's the manager's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What is the manager's email address?"
+            message: "What's the manager's email address?"
         },
         {
             type: 'input',
             name: 'officeNumber',
-            message: "What is the manager's office number?"
+            message: "What's the manager's office number?"
         }
     ]).then(response => {
         const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
@@ -51,22 +51,22 @@ const engineerInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What is the engineer's name?"
+            message: "What's the engineer's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What is the engineer's ID?"
+            message: "What's the engineer's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What is the engineer's email address?"
+            message: "What's the engineer's email address?"
         },
         {
             type: 'input',
             name: 'github',
-            message: "What is the engineer's GitHub username?"
+            message: "What's the engineer's GitHub username?"
         }
     ]).then(response => {
         const engineer = new Engineer(response.name, response.id, response.email, response.github);
@@ -82,17 +82,17 @@ const internInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What is the intern's name?"
+            message: "What's the intern's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What is the intern's ID?"
+            message: "What's the intern's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What is the intern's email address?"
+            message: "What's the intern's email address?"
         },
         {
             type: 'input',
@@ -145,7 +145,7 @@ const addRole = () => {
         if (response.addMore) {
             whatRole();
         } else {
-            console.log("Have a great rest of your day!");
+            console.log("Have a nice day!");
             buildTeam();
         };
     });
@@ -154,11 +154,12 @@ const addRole = () => {
 // This function calls the render function and dynamically creates the team.html file
 buildTeam = () => {
     fs.writeFile(outputPath, render(employees), err => {
-        err ? console.log(err) : console.log("Team profile created!");
+        err ? console.log(err) : console.log("Your Team Work profile has been generated!");
     });
 };
 
 whatRole();
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
