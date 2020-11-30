@@ -1,0 +1,21 @@
+.team-heading {
+    background-image: url();
+    color: rgb(29, 29, 29);
+    -webkit-text-stroke: 1px white;
+    text-shadow: 10px 10px 15px black;
+    font-family: serif;
+}
+
+body {
+    background-image: url();
+
+}
+
+.card-header {
+    text-shadow: 10px 10px 20px black;
+    background-image: url();
+}
+
+.card-body {
+    background-image: url();
+}

@@ -6,10 +6,9 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "teamwork.html");
 
 const render = require("./lib/htmlRenderer");
-
 
 // Empty array that each employee object will be pushed into
 const employees = [];
@@ -20,22 +19,22 @@ const managerInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What's the manager's name?"
+            message: "What is the manager's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What's the manager's ID?"
+            message: "What is the manager's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What's the manager's email address?"
+            message: "What is the manager's email address?"
         },
         {
             type: 'input',
             name: 'officeNumber',
-            message: "What's the manager's office number?"
+            message: "What is the manager's office number?"
         }
     ]).then(response => {
         const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
@@ -51,22 +50,22 @@ const engineerInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What's the engineer's name?"
+            message: "What is the engineer's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What's the engineer's ID?"
+            message: "What is the engineer's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What's the engineer's email address?"
+            message: "What is the engineer's email address?"
         },
         {
             type: 'input',
             name: 'github',
-            message: "What's the engineer's GitHub username?"
+            message: "What is the engineer's GitHub username?"
         }
     ]).then(response => {
         const engineer = new Engineer(response.name, response.id, response.email, response.github);
@@ -82,17 +81,17 @@ const internInfo = async () => {
         {
             type: 'input',
             name: 'name',
-            message: "What's the intern's name?"
+            message: "What is the intern's name?"
         },
         {
             type: 'input',
             name: 'id',
-            message: "What's the intern's ID?"
+            message: "What is the intern's ID?"
         },
         {
             type: 'input',
             name: 'email',
-            message: "What's the intern's email address?"
+            message: "What is the intern's email address?"
         },
         {
             type: 'input',
@@ -107,7 +106,7 @@ const internInfo = async () => {
     addRole();
 };
 
-// This function prompts the user to select which type of employee they want to enter information about
+// This function prompts the user to select what kind of employee they want to enter info about
 const whatRole = () => {
     inquirer.prompt([
         {
@@ -133,7 +132,8 @@ const whatRole = () => {
     });
 };
 
-// This function checks if the user would like to add more profiles or is done
+// function to add more profiles or stop with new inputs and creates Team Work profile
+
 const addRole = () => {
     inquirer.prompt([
         {
@@ -159,49 +159,3 @@ buildTeam = () => {
 };
 
 whatRole();
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
-
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
-
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
-
-// HINT: each employee type (manager, engineer, or intern) has slightly different
-// information; write your code to ask different questions via inquirer depending on
-// employee type.
-
-// HINT: make sure to build out your classes first! Remember that your Manager, Engineer,
-// and Intern classes should all extend from a class named Employee; see the directions
-// for further information. Be sure to test out each class and verify it generates an
-// object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
-
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
-
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
-
-// HINT: each employee type (manager, engineer, or intern) has slightly different
-// information; write your code to ask different questions via inquirer depending on
-// employee type.
-
-// HINT: make sure to build out your classes first! Remember that your Manager, Engineer,
-// and Intern classes should all extend from a class named Employee; see the directions
-// for further information. Be sure to test out each class and verify it generates an
-// object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
