@@ -12,7 +12,10 @@
 # Installation
 The following necessary dependencies must be installed to run the application properly: Inquirer
 # Usage
-​This application is used to create a website with profiles of their team members.
+​This application is used to create a website with profiles of their team members.<br>
+![alt text](https://github.com/Dibello80/BackToTheQuiz/blob/main/screeshot_app/Screen%20Shot_1.png)
+![alt text](https://github.com/Dibello80/BackToTheQuiz/blob/main/screeshot_app/Screen%20Shot_1.png)
+Video demo link => https://drive.google.com/file/d/10LI9OeclNGaSPv2icItHwI8W8hvP9w_j/view
 # License
 This project is license under the MIT license.
 # Contributing
@@ -21,3 +24,4 @@ This project is license under the MIT license.
 To run tests, you need to run the following command: node app.js
 # Questions
 If you have any questions about the repo you can contact Dibello80 directly to: angelodibellomusic@gmail.com.
+
