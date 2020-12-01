@@ -12,7 +12,7 @@
 # Installation
 The following necessary dependencies must be installed to run the application properly: Inquirer
 # Usage
-​This application is used to create a website with profiles of their team members.
+​This application is used to create a website with profiles of their team members.<br>
 Video demo link => https://drive.google.com/file/d/10LI9OeclNGaSPv2icItHwI8W8hvP9w_j/view
 # License
 This project is license under the MIT license.
