@@ -1,21 +1,18 @@
 .team-heading {
-    background-image: url();
+    background-color: black;
     color: rgb(29, 29, 29);
     -webkit-text-stroke: 1px white;
-    text-shadow: 10px 10px 15px black;
-    font-family: serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body {
-    background-image: url();
+body, .card-body {
+    background-image: url(https://cdn.shopify.com/s/files/1/0012/4393/8877/files/Office_Wallpaper_Banner.jpg?11543310328790733081) ;
 
 }
 
 .card-header {
-    text-shadow: 10px 10px 20px black;
-    background-image: url();
+    text-shadow: 10px 10px 20px rgb(114, 94, 94);
+    
 }
 
-.card-body {
-    background-image: url();
-}
+
