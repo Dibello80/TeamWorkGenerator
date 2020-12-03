@@ -13,8 +13,8 @@
 The following necessary dependencies must be installed to run the application properly: Inquirer
 # Usage
 ​This application is used to create a website with profiles of their team members.<br>
-![alt text](https://github.com/Dibello80/BackToTheQuiz/blob/main/screeshot_app/Screen%20Shot_1.png)
-![alt text](https://github.com/Dibello80/BackToTheQuiz/blob/main/screeshot_app/Screen%20Shot_1.png)
+![alt text](https://github.com/Dibello80/TeamWorkGenerator/blob/main/img/Teamworkshot2.png)
+![alt text](https://github.com/Dibello80/TeamWorkGenerator/blob/main/img/Teamworkshot1.png)
 Video demo link => https://drive.google.com/file/d/10LI9OeclNGaSPv2icItHwI8W8hvP9w_j/view
 # License
 This project is license under the MIT license.
